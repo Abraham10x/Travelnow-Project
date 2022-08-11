@@ -13,7 +13,7 @@ const theme = createTheme({
         main: '#2F88FF',
       },
       lightMode: {
-        main: '#FFF',
+        main: '#FFFFFF',
       },
       darkMode: {
         main: '#000',

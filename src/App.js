@@ -1,18 +1,15 @@
 import React from 'react';
-import { Button } from '@mui/material';
-import { Add } from '@mui/icons-material';
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero';
+import Home from './Home';
+import About from './About';
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Hero />
-      <Button startIcon={<Add/>} variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-      <h1>Hello</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 }

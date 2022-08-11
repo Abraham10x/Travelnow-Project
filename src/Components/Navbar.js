@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { styled } from '@mui/material/styles';
+import { Link } from "react-router-dom";
 
 const pages = ['Bookings', 'Destination', 'About Us'];
 
@@ -128,6 +129,7 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'flex-end' }}>
+          <Link to="/about">
             <Button 
               variant="contained" 
               size='large' 
@@ -138,6 +140,8 @@ const ResponsiveAppBar = () => {
               }}
             >Get Started
             </Button>
+            </Link>
+            <Link to="/about">
             <Button 
               variant="contained" 
               size='small' 
@@ -148,6 +152,7 @@ const ResponsiveAppBar = () => {
               }}
             >Get Started
             </Button>
+            </Link>
           </Box>
         </StyledToolbar>
       </Container>
