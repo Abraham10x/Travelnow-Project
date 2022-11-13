@@ -65,7 +65,7 @@ const ResponsiveAppBar = () => {
               fontWeight: 900,
               fontSize: '42px',
               lineHeight: '63px',
-              color: 'primary',
+              color: '#020180 !important',
               textDecoration: 'none',
             }}
           >
@@ -114,14 +114,14 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'Poppins, sans-serif',
               fontWeight: 900,
-              color: 'primary',
+              color: '#020180 !important',
               textDecoration: 'none',
             }}
           >

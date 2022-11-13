@@ -29,7 +29,7 @@ export default function Footer(){
                             fontWeight: 900,
                             fontSize: '42px',
                             lineHeight: '63px',
-                            color: 'primary',
+                            color: '#020180 !important',
                             textDecoration: 'none',
                             }}
                         >
@@ -47,7 +47,7 @@ export default function Footer(){
                             fontFamily: 'Poppins, sans-serif',
                             fontWeight: 900,
                             fontSize: '29px',
-                            color: 'primary',
+                            color: '#020180 !important',
                             textDecoration: 'none',
                             }}
                         >
