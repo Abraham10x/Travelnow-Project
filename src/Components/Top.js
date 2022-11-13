@@ -12,7 +12,7 @@ import Kandy from '../../src/Images/destination/kandy-sri-lanka.png'
 export default function Top (){
     return(
         <React.Fragment>
-            <Container maxWidth='xl' sx={{mb: '100px'}}>
+            <Container maxWidth='xl' sx={{mb: '100px', pt: '4rem'}}>
             <Typography variant='h2'
             sx={{
               fontFamily: 'Poppins, sans-serif',
@@ -58,34 +58,34 @@ export default function Top (){
             }}>
               Discover Amazing Place With Exclusive Deals.
           </Typography>
-                <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={4}>
-                            <DestinationCard
-                              image={Kashmir}
-                              city='Kashmir, India'
-                              rating='3.9'
-                              review='1.8k reviews'
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <DestinationCard
-                                image={Florence}
-                                city='Florence, Italy'
-                                rating='4.5'
-                                review='3.5k reviews'
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <DestinationCard
-                              image={Kandy}
-                              city='Kandy, Sri Lanka'
-                              rating='2.5'
-                              review='2.9k reviews'
-                            />
-                        </Grid>
-                    </Grid>
-                </Box>
+          <Box sx={{ flexGrow: 1, justifyContent: 'center', mt: '3rem' }}>
+              <Grid container spacing={2}>
+                  <Grid item xs={12} sm={6} md={4}>
+                      <DestinationCard
+                        image={Kashmir}
+                        city='Kashmir, India'
+                        rating='3.9'
+                        review='1.8k reviews'
+                      />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                      <DestinationCard
+                          image={Florence}
+                          city='Florence, Italy'
+                          rating='4.5'
+                          review='3.5k reviews'
+                      />
+                  </Grid>
+                  <Grid item xs={12} sm={6} md={4}>
+                      <DestinationCard
+                        image={Kandy}
+                        city='Kandy, Sri Lanka'
+                        rating='2.5'
+                        review='2.9k reviews'
+                      />
+                  </Grid>
+              </Grid>
+          </Box>
             </Container>
         </React.Fragment>
     )

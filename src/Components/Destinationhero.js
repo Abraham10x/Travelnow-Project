@@ -19,7 +19,7 @@ export default function Hero() {
         disableGutters
         sx={{ backgroundImage: `url(${beach})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
       >
-        <Container maxWidth='xl'>
+        <Container maxWidth='xl' sx={{py:'3rem'}}>
           <Typography 
             variant='h1' 
             sx={{
@@ -31,7 +31,7 @@ export default function Hero() {
               fontSize: '60px',
               lineHeight: '75px',
             }}>
-              Find Next Place To Visit
+              Looking a Vaction Package?
           </Typography>
           <Typography 
             variant='h1' 
@@ -44,7 +44,7 @@ export default function Hero() {
               fontSize: '50px',
               lineHeight: '50px',
             }}>
-              Find Next Place To Visit
+              Looking a Vaction Package?
           </Typography>
           <Typography 
             variant='h6' 

@@ -5,3 +5,26 @@
 .cont2 {
   background-color: yellow;
 }
+
+.rate-box {
+  width: 200px;
+  background: #F0F1F4;
+  border-radius: 25px;
+  padding: 3rem 3rem;
+  position: relative;
+  right: 40%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px){
+  .rate-box {
+    width: 200px;
+    background: #F0F1F4;
+    border-radius: 25px;
+    padding: 3rem 3rem;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin-top: 2rem;
+  }
+}

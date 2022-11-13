@@ -23,7 +23,7 @@ export default function TopAbout (){
             >Explore Top Destination</Typography>
             <Typography variant='p' 
                 sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none', mb: '8rem' },
                 fontFamily: 'Poppins, sans-serif',
                 fontWeight: 700,
                 fontSize: '40px',
@@ -56,10 +56,10 @@ export default function TopAbout (){
                 }}>
                 Discover Amazing Place With Exclusive Deals.
             </Typography>
-                <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
-                    <Grid container spacing={5}>
+                <Box sx={{ flexGrow: 1, width: '100%', mt: '4rem' }}>
+                    <Grid container spacing={{ xs: 2, md: 3 }} sx={{justifyContent: 'center'}}>
                         { destinations.map( item => (
-                        <Grid item xs={12} sm={6} md={4} key={item.id}>
+                        <Grid item xs={12} sm={6} md={4} key={item.id} sx={{mx: 'auto'}}>
                             <DestinationCard
                                 key={item.id}
                                 image={item.image}

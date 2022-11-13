@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import DestinationCard from './DestinationsCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
@@ -16,7 +15,7 @@ export default function Footer(){
             <Container maxWidth='xl'>
             <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} sm={4} md={6}>
                         <Typography
                             variant="h6"
                             noWrap
@@ -60,7 +59,7 @@ export default function Footer(){
                         </Typography>
                         <Box sx={{ maxWidth: '400px', width: '100%', mb: '70px'}}>
                             <Grid container spacing={0}>
-                                <Grid item xs={3} md={3}>
+                                <Grid item xs={3}  md={3}>
                                 <Box 
                                     sx=
                                     {{
@@ -127,7 +126,7 @@ export default function Footer(){
                             </Grid>
                         </Box>
                         </Grid>
-                        <Grid item xs={12} md={3}>
+                        <Grid item xs={12} sm={4} md={3}>
                             <Grid>
                         <Typography
                             variant="h6"
@@ -164,7 +163,7 @@ export default function Footer(){
                         >
                             About Us
                         </Typography>
-                        <Link to="/about">
+                        <Link to="/about" style={{textDecoration: 'none'}}>
                         <Typography
                             variant="h6"
                             component="p"
@@ -214,9 +213,8 @@ export default function Footer(){
                         </Typography>
                         </Grid>
                         </Grid>
-                        <Grid item xs={12} md={3}>
+                        <Grid item xs={12} sm={4} md={3}>
                             <Grid>
-                            <Grid item xs={12}>
                                 
                         <Typography
                             variant="h6"
@@ -281,7 +279,6 @@ export default function Footer(){
                         >
                             FAQs
                         </Typography>
-                        </Grid>
                         </Grid>
                         </Grid>
                     </Grid>

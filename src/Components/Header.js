@@ -7,7 +7,7 @@ import { Typography } from '@mui/material';
 export default function Headers(){
     return(
         <React.Fragment>
-            <Container maxWidth='xl' sx={{mb: '80px'}} >
+            <Container maxWidth='xl' sx={{mt: '90px'}} >
                 <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={6}>
@@ -26,7 +26,6 @@ export default function Headers(){
                         sx={{
                         fontFamily: 'Poppins, sans-serif',
                         display: { xs: 'block', md: 'none' },
-                        fontFamily: 'Poppins, sans-serif',
                         fontWeight: 700,
                         fontSize: '40px',
                         lineHeight: '40px',

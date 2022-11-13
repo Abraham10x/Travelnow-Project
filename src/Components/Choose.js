@@ -9,7 +9,7 @@ import { Typography } from '@mui/material';
 export default function Choose (){
     return(
         <React.Fragment>
-            <Container maxWidth='false' sx={{ backgroundColor: '#F0F2F5', }}>
+            <Container maxWidth='false' sx={{ backgroundColor: '#F0F2F5', py: '2rem' }}>
                 <Container maxWidth='xl' >
                     <Typography variant='h2' 
                         sx={{
@@ -26,9 +26,9 @@ export default function Choose (){
                         sx={{
                         fontFamily: 'Poppins, sans-serif',
                         display: { xs: 'block', md: 'none' },
-                        fontFamily: 'Poppins, sans-serif',
                         fontWeight: 700,
                         fontSize: '40px',
+                        pt: '50px',
                         lineHeight: '40px',
                         }}
                     >Why Choose Us</Typography>
@@ -60,26 +60,22 @@ export default function Choose (){
                     </Typography>
                     <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
                         <Grid container spacing={2}>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseBox/>
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseMain/>
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseMain/>
                             </Grid>
-                        </Grid>
-                    </Box>
-                    <Box sx={{ flexGrow: 1, justifyContent: 'center', mb: '100px' }}>
-                        <Grid container spacing={2}>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseBox/>
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseMain/>
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                                 <ChooseMain/>
                             </Grid>
                         </Grid>

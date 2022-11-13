@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <Link to={page.link} key={page.id}>
+                <Link to={page.link} key={page.id} style={{textDecoration: 'none', color: '#000000'}}>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={page.link} key={page.id}>
+              <Link to={page.link} key={page.id} style={{textDecoration: 'none'}}>
               <Button
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, mx: '1rem', color: '#000000', fontSize: '16px', display: 'block' }}
@@ -140,7 +140,7 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'flex-end' }}>
-          <Link to="/about">
+          <Link to="/about" style={{textDecoration: 'none'}}>
             <Button 
               variant="contained" 
               size='large' 
@@ -152,7 +152,7 @@ const ResponsiveAppBar = () => {
             >Get Started
             </Button>
             </Link>
-            <Link to="/about">
+            <Link to="/about" style={{textDecoration: 'none'}}>
             <Button 
               variant="contained" 
               size='small' 
