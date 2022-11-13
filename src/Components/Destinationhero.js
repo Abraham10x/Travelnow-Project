@@ -1,15 +1,14 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
-import plane from './../Images/Plane.jpg'
-import { Tab, Tabs, Typography } from '@mui/material';
-import { Box } from '@mui/system';
-import SelectionTab from './../Components/Tab'
+import beach from './../Images/destination-hero.png'
+import { Typography } from '@mui/material';
 
 export default function Hero() {
     const StyledContainer = styled(Container)`
       height: 50vh;
-      width: 100%; `
+      width: 100%; 
+      `
     ;
 
 
@@ -18,7 +17,7 @@ export default function Hero() {
       <StyledContainer 
         maxWidth="false" 
         disableGutters
-        sx={{ backgroundImage: `url(${plane})` }}
+        sx={{ backgroundImage: `url(${beach})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
       >
         <Container maxWidth='xl'>
           <Typography 

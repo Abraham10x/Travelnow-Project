@@ -4,6 +4,9 @@ import DestinationCard from './DestinationsCard';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
+import Kashmir from '../../src/Images/destination/Kashmir-india.png'
+import Florence from '../../src/Images/destination/florence-italy.png'
+import Kandy from '../../src/Images/destination/kandy-sri-lanka.png'
 
 
 export default function Top (){
@@ -22,7 +25,6 @@ export default function Top (){
           >Explore Top Destination</Typography>
           <Typography variant='p' 
             sx={{
-              fontFamily: 'Poppins, sans-serif',
               display: { xs: 'block', md: 'none' },
               fontFamily: 'Poppins, sans-serif',
               fontWeight: 700,
@@ -59,13 +61,28 @@ export default function Top (){
                 <Box sx={{ flexGrow: 1, justifyContent: 'center' }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={4}>
-                            <DestinationCard/>
+                            <DestinationCard
+                              image={Kashmir}
+                              city='Kashmir, India'
+                              rating='3.9'
+                              review='1.8k reviews'
+                            />
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <DestinationCard/>
+                            <DestinationCard
+                                image={Florence}
+                                city='Florence, Italy'
+                                rating='4.5'
+                                review='3.5k reviews'
+                            />
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <DestinationCard/>
+                            <DestinationCard
+                              image={Kandy}
+                              city='Kandy, Sri Lanka'
+                              rating='2.5'
+                              review='2.9k reviews'
+                            />
                         </Grid>
                     </Grid>
                 </Box>
