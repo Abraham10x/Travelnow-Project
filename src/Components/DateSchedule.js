@@ -1,0 +1,47 @@
+import * as React from 'react';
+import dayjs from 'dayjs';
+import TextField from '@mui/material/TextField';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DesktopDatePicker } from '@mui/x-date-pickers';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+
+export default function DateSchedule() {
+  const [value, setValue] = React.useState(dayjs('2014-08-18T21:11:54'));
+
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DesktopDatePicker
+          label="Departure"
+          inputFormat="MM/DD/YYYY"
+          value={value}
+          onChange={handleChange}
+          renderInput={(params) => <TextField {...params} />}
+        />
+        <DesktopDatePicker
+          label="Return"
+          inputFormat="MM/DD/YYYY"
+          value={value}
+          onChange={handleChange}
+          renderInput={(params) => <TextField {...params} />}
+        />
+        <Link to="/about" style={{textDecoration: 'none'}}>
+        <Button 
+        variant="contained" 
+        size='large' 
+        color='secondary'
+        sx={{
+            color: '#FFF',
+            my: '0.8rem'
+        }}
+        >Select Flight
+        </Button>
+        </Link>
+    </LocalizationProvider>
+  );
+}

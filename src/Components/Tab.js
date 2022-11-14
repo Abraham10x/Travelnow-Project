@@ -98,10 +98,10 @@ export default function SelectionTabs() {
           <Flight/>
         </StyleTabPanel>
         <TabPanel value={'two'}>
-          Item Two
+          <Flight/>
         </TabPanel>
         <TabPanel value={'three'}>
-          Item Three
+          <Flight/>
         </TabPanel>
         </TabContext>
     </Box>
