@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Box } from '@mui/system';
 import { Container, styled, Typography } from '@mui/material';
 
 
@@ -27,15 +26,6 @@ export default function Flight(){
                 }}>
                 <Typography variant='h3' color={'black'}>Item one</Typography>
             </StyledBox>
-{/* {            <StyledBox maxWidth='xl' 
-                sx={{
-                    backgroundColor: '#FFFFFF', 
-                    borderRadius: '0px 0px 15px 15px',
-                    minWidth: '361px',
-                    display:{md:'none', xs:'block'},
-                    }}>
-                <Typography variant='h3' color={'black'}>Item one</Typography>
-            </StyledBox>} */}
         </React.Fragment>
     )
 }

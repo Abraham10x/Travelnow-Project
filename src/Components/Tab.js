@@ -1,21 +1,19 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import {TabPanel, TabContext} from '@mui/lab/';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import HotelIcon from '@mui/icons-material/Hotel';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import { Button, styled } from '@mui/material';
-import { Add } from '@mui/icons-material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Flight from './Flight';
 import './../App.css'
 
 export default function SelectionTabs() {
   const [value, setValue] = React.useState('one');
-  const [style, setStyle] = React.useState(true);
-    const focus = style ? '#757ce8' : '#002884'
+  // const [style, setStyle] = React.useState(true);
+    // const focus = style ? '#757ce8' : '#002884'
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };

@@ -2,8 +2,7 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
 import plane from './../Images/Plane.jpg'
-import { Tab, Tabs, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Typography } from '@mui/material';
 import SelectionTab from './../Components/Tab'
 
 export default function Hero() {
